@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anta&family=Inter:wght@100..900&family=Kode+Mono:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Meu portfólio</title>
+</head>
+
+<body>
+    <img src="img/nome.png" alt="meu nome" class="nome">
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+    
+    </div>
+
+
+    <section class="container principal" id="home">
+        <h1 class="container__titulo"></h1>
+        <div class="container__descricao">
+            <h2 class="container__apresentacao" id="box">Sobre <span>mim</span></h2>
+            <h5 class="descricao__texto">Sou uma profissional em constante busca por conhecimento e crescimento,
+                atualmente focada em desenvolvimento front-end. Com formação em Análise e Desenvolvimento de Sistemas e
+                experiência em Medicina Diagnóstica, estou embarcando em uma jornada de aprendizado no mundo do
+                desenvolvimento de interfaces web.
+                <br><br>
+                Dedico meu tempo e energia para aprofundar meus conhecimentos em HTML, CSS e JavaScript. As bases
+                fundamentais do desenvolvimento front-end. Sou comprometida e pratico regularmente, desenvolvendo
+                projetos pessoais e aplicando meu conhecimento.
+                <br><br>
+                Estou entusiasmada com essa nova fase da minha carreira e determinada a me tornar uma desenvolvedora
+                front-end qualificada e capaz de criar experiências web envolventes e acessíveis para os usuários.
+            </h5>
+        </div>
+
+        <div class="principal__imagem">
+            <img src="img/perfil.png" alt="icone de Code" class="imagem__code">
+        </div>
+
+    </section>
+
+    <section class="secao4" id="habilidades">
+        <h2 class="container__apresentacao">Habilidades</h2>
+        <div class="secao4-div">
+            <!-- Card 1 -->
+            <div class="secao4-div-card">
+                <img src="img/icone-html.png" alt="">
+                <h3>HTML</h3>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="secao4-div-card">
+                <img src="img/icone-css.png" alt="">
+                <h3>CSS</h3>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="secao4-div-card">
+                <img src="img/icone-js.png" alt="">
+                <h3>JavaScript</h3>
+            </div>
+
+            <div class="secao4-div-card">
+                <img src="img/icone-django.png" alt="">
+                <h3>Django</h3>
+            </div>
+
+            <div class="secao4-div-card">
+                <img src="img/icone-mysql.png" alt="">
+                <h3>MySql</h3>
+            </div>
+
+            <div class="secao4-div-card">
+                <img src="img/icone-linux.png" alt="">
+                <h3>Linux</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="contatos" class="js-section">
+        <div class="contatos">
+            <h2 class="container__apresentacao">Contatos</h2>
+            <div class="icons">
+                <div class="icon">
+                    <a href="mailto:tatianegoliveira" target="_blank">
+                        <div class="box">
+                            <img src="img/mail.png" alt="e-mail">
+                        </div>
+                    </a>
+                    <a href="mailto:tatianegoliveira" target="_blank">
+                        <p>E-mail</p>
+                    </a>
+                    <a href="mailto:tatianegoliveira" target="_blank">
+                        <p>tatianegoliveira</p>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="https://api.whatsapp.com/send?phone=5534998929456" target="_blank">
+                        <div class="box">
+                            <img src="img/phone.png" alt="telefone">
+                        </div>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=5534998929456" target="_blank">
+                        <p>Telefone</p>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=5534998929456" target="_blank">
+                        <p>(34) 99892-9456</p>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="https://www.linkedin.com/in/tatianegoliveira/" target="_blank">
+                        <div class="box">
+                            <img src="img/linkedin.png" alt="linkedin">
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tatianegoliveira/" target="_blank">
+                        <p>Linkedin</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tatianegoliveira/" target="_blank">
+                        <p>@tatianegoliveira</p>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="https://github.com/Tatianegoliveir" target="_blank">
+                        <div class="box">
+                            <img src="img/github.png" alt="github">
+                        </div>
+                    </a>
+                    <a href="https://github.com/Tatianegoliveir" target="_blank">
+                        <p>Github</p>
+                    </a>
+                    <a href="https://github.com/Tatianegoliveir" target="_blank">
+                        <p>@Tatianegoliveir</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a class="back-to-top" href="#"></a>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        jQuery(function ($) {
+            $(".back-to-top").css("display", "none");
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() == 0) {
+                    $(".back-to-top").fadeOut();
+                } else {
+                    $(".back-to-top").fadeIn();
+                }
+            });
+
+            $(".back-to-top").click(function (e) {
+                e.preventDefault();
+                $("html, body").animate({ scrollTop: 0 }, 800);
+            });
+        });
+
+    </script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Create the navigation menu <ul> element
+      var menu = document.getElementById("navbarNav");
+
+      // Add existing menu items
+      ["home", "habilidades", "contatos"].forEach(function(sectionName) {
+        var menuItem = document.createElement("li");
+        menuItem.classList.add("nav-item");
+
+        var link = document.createElement("a");
+        link.classList.add("nav-link");
+        link.href = "#" + sectionName;
+        link.textContent = sectionName.charAt(0).toUpperCase() + sectionName.slice(1);
+
+        menuItem.appendChild(link);
+        menu.appendChild(menuItem);
+      });
+
+      // Add menu items for <section> elements
+      var sections = document.getElementsByTagName('section');
+      for (var i = 0; i < sections.length; i++) {
+        var section = sections[i];
+        var sectionName = section.id;
+
+        if (["home", "habilidades", "contatos"].indexOf(sectionName) === -1) {
+          var menuItem = document.createElement("li");
+          menuItem.classList.add("nav-item");
+
+          var link = document.createElement("a");
+          link.classList.add("nav-link");
+          link.href = "#" + sectionName;
+          link.textContent = sectionName.charAt(0).toUpperCase() + sectionName.slice(1);
+
+          menuItem.appendChild(link);
+          menu.appendChild(menuItem);
+        }
+      }
+    });
+
+  </script>
+</body>
+
+</html>
